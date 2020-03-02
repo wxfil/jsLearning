@@ -16,6 +16,9 @@ DOM方法：
 2.getElementsByTagName
 3.setAttribute
 4.getAttribute
+5.createElement
+6.appendChild
+7.createTextNode
 
 HTML-DOM与DOM core对比：
 1.设置元素的属性：element.value <--> document.setAttribute("value", "the new value");
@@ -23,7 +26,7 @@ HTML-DOM与DOM core对比：
 3.forms对象：document.forms <--> document.getElementsByTagName("form");
 4.图片的src属性：element.src <--> document.getAttribute("src");
 5.href属性：element.href <--> document.getAttribute("href");
-
+6.document.write()/innerHTML
 
 window对象方法：
 1.window.onload()
