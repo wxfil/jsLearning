@@ -17,8 +17,10 @@ DOM方法：
 3.setAttribute
 4.getAttribute
 5.createElement
-6.appendChild
-7.createTextNode
+6.createTextNode
+7.appendChild
+8.parentNode.insertBefore
+9.
 
 HTML-DOM与DOM core对比：
 1.设置元素的属性：element.value <--> document.setAttribute("value", "the new value");
