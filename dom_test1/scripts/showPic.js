@@ -27,11 +27,12 @@ function showPic(whichpic){
 	if (placeholder.nodeName != "IMG") return true;
 	placeholder.setAttribute("src", source);
 	if(!document.getElementById("description")) return false;
-	var text = whichpic.getAttribute("title") ? whichpic.getAttribute("title") : "";	
+	var text = whichpic.getAttribute("title") ? whichpic.getAttribute("title") : "";
 	var description = document.getElementById("description");
+  // <p>元素的文本是元素的第1个节点
 	if (description.firstChild.nodeType == 3){
 		description.firstChild.nodeValue = text;
-	}	
+	}
 	return false;
 }
 
@@ -61,22 +62,21 @@ function preparePlaceholder() {
 	description.setAttribute("id", "description");
 	var text = document.createTextNode("Choose an image.");
 	description.appendChild(text);
-	
+
 	// 方式1：放在body元素的最后1个节点位置
 	//document.getElementsByTagName("body")[0].appendChild(placeholder);
 	//document.getElementsByTagName("body")[0].appendChild(description);
-	
+
 	// 方式2：将元素插入gallery元素之前
 	//var gallery = document.getElementById("imagegallery");
 	//gallery.parentNode.insertBefore(placeholder, gallery);
 	//gallery.parentNode.insertBefore(description, gallery);
-	
+
 	// 方式3：将元素插入gallery元素之后
-	var gallery = document.getElementById("imagegallery"); 
+	var gallery = document.getElementById("imagegallery");
 	insertAfter(placeholder, gallery);
 	insertAfter(description, placeholder);
 }
 
 addLoadEvent(prepareGallery);
 addLoadEvent(preparePlaceholder);
-
