@@ -1,6 +1,5 @@
 
 function displayAbbreviations() {
-  alert("test")
   if(!document.getElementsByTagName || !document.createElement
   || !document.createTextNode) return false;
   // get all the abbreviations
