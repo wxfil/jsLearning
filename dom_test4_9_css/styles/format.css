@@ -29,3 +29,11 @@ th,td {
   width: 10em;
   padding: .5em;
 }
+/*
+tr:hover {
+  font-weight: bold;
+}
+*/
+.odd {
+  background-color: #ffc;
+}
