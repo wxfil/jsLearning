@@ -8,7 +8,7 @@ function styleElementSiblings(tag, theClass) {
     // elem.style.fontWeight = "bold";
     // elem.style.fontSize = "1.2em";
     // 方式二：
-    // elem.setAttribute("class", "info;
+    // elem.setAttribute("class", "info");
     // 方式三：覆盖式替换样式
     // elem.className = "info";
     // 方式四：叠加式替换
