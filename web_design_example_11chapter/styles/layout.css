@@ -7,7 +7,7 @@ body {
   background-image: url(../images/background.jpg);
   background-attachment: fixed;
   background-position: top left;
-  background-repeat: repeat-x;
+  background-repeat: repeat-xy;
   max-width: 80em;
 }
 #header {
